@@ -162,9 +162,9 @@ label= "BASE_W"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp DEM_Y    &MCM_SEMI
+                &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp DEW_Y    &WCM_SEMI
                 &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp G           &kp M       &mt RSHFT N &mt RGUI E  &mt RALT I   &mt RCTRL O
-    &kp TAB     &kp DEM_Z   &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &MCM_COMMA  &MCM_DOT     &MCM_FSLH   &kp RET
+    &kp TAB     &kp DEW_Z   &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &WCM_COMMA  &WCM_DOT     &WCM_FSLH   &kp RET
                                         &kp LGUI    &mt LSHFT SPACE  &mo LOWER_M  &mo RAISE_M   &mt RSHFT SPACE &kp LALT
                         >;
                 };
@@ -187,9 +187,9 @@ label= "LOWER_W"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &kp HOME    &kp UP      &kp END     &none           &kp DEM_PRCNT &kp N7     &kp N8      &kp N9      &kp DEM_EQUAL
-                &kp LC(LEFT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp LC(RIGHT)   &kp DEM_STAR  &kp N4     &kp N5      &kp N6      &kp DEM_PLUS
-    &trans      &none       &kp PG_UP   &none       &kp PG_DN   &none           &kp DEM_SLASH &kp N1     &kp N2      &kp N3      &kp DEM_MINUS   &trans      
+                &none       &kp HOME    &kp UP      &kp END     &none           &kp DEW_PRCNT &kp N7     &kp N8      &kp N9      &kp DEW_EQUAL
+                &kp LC(LEFT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp LC(RIGHT)   &kp DEW_STAR  &kp N4     &kp N5      &kp N6      &kp DEW_PLUS
+    &trans      &none       &kp PG_UP   &none       &kp PG_DN   &none           &kp DEW_SLASH &kp N1     &kp N2      &kp N3      &kp DEW_MINUS   &trans      
                                         &trans      &trans      &trans          &kp COMMA   &kp DOT     &kp N0      
                         >;
                 };
@@ -212,9 +212,9 @@ label= "RAISE_W"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp DEM_DEG &kp DEM_AMPS &kp DEM_DQT   &kp DEM_LBKT &kp DEM_BSLH &none       &kp DEM_RBKT &kp uuml     &kp DEM_SQT   &kp DEM_SECT
-                &kp auml    &kp DEM_AT   &kp DEM_SZ    &kp DEM_LPAR &kp DEM_EXCL &kp DEM_HASH &kp DEM_RPAR &kp DEM_EURO  &kp DEM_DLLR  &kp ouml             
-    &trans      &none       &kp DEM_PIPE &kp DEM_TILDE &kp DEM_LBRC &none        &none       &kp DEM_RBRC &kp DEM_ACUTE &kp DEM_GRAVE &none       &trans         
+                &kp DEW_DEG &kp DEW_AMPS &kp DEW_DQT   &kp DEW_LBKT &kp DEW_BSLH &none       &kp DEW_RBKT &kp uuml     &kp DEW_SQT   &kp DEW_SECT
+                &kp auml    &kp DEW_AT   &kp DEW_SZ    &kp DEW_LPAR &kp DEW_EXCL &kp DEW_HASH &kp DEW_RPAR &kp DEW_EURO  &kp DEW_DLLR  &kp ouml             
+    &trans      &none       &kp DEW_PIPE &kp DEW_TILDE &kp DEW_LBRC &none        &none       &kp DEW_RBRC &kp DEW_ACUTE &kp DEW_GRAVE &none       &trans         
                                         &trans      &trans      &mo ADJ          &none       &trans      &trans      
                         >;
                 };
