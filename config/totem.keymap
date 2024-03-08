@@ -17,6 +17,7 @@
 
 #include "../helpers/helper.h"
 #include "../helpers/keys_de_mac.h"
+#include "../helpers/keys_de_win.h"
 
 #define BASE_M  0
 #define LOWER_M 1
