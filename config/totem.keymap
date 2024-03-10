@@ -91,17 +91,17 @@ label= "BASE_M"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A     ┃     R     ┃     S     ┃     T     ┃     G     ┃   ┃     M     ┃     N     ┃     E     ┃     I     ┃     O     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃   ENTER   ┃
+// ┃           ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   LGUI    ┃   LSHFT   ┃   LOWER_M ┃   ┃   RAISE_M ┃    SPC    ┃   LALT    ┃
+//                                     ┃   LGUI    ┃   LSHFT   ┃   LOWER_M ┃   ┃   RAISE_M ┃    ENTER  ┃   LALT    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp DM_Y    &SMM_SEMI
                 &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp G           &kp M       &mt RSHFT N &mt RGUI E  &mt RALT I  &mt RCTRL O
-    &none       &kp DM_Z    &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &SMM_COMMA  &SMM_DOT    &SMM_FSLH   &kp RET
-                                        &kp LGUI    &kp SPACE   &mo LOWER_M     &mo RAISE_M &kp SPACE   &kp LALT
+    &none       &kp DM_Z    &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &SMM_COMMA  &SMM_DOT    &SMM_FSLH   &none
+                                        &kp LGUI    &kp SPACE   &mo LOWER_M     &mo RAISE_M &kp RET     &kp LALT
                         >;
                 };
 
@@ -124,8 +124,8 @@ label= "LOWER_M"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &kp HOME    &kp UP      &kp END     &none           &kp DM_PRCNT &kp N7     &kp N8      &kp N9      &kp DM_EQUAL
-                &kp LC(LEFT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp LC(RIGHT)   &kp DM_STAR  &kp N4     &kp N5      &kp N6      &kp DM_PLUS
-    &none       &none       &kp PG_UP   &none       &kp PG_DN   &none           &kp DM_SLASH &kp N1     &kp N2      &kp N3      &kp DM_MINUS   &trans      
+                &kp DM_DL   &kp LEFT    &kp DOWN    &kp RIGHT   &kp DM_DR       &kp DM_STAR  &kp N4     &kp N5      &kp N6      &kp DM_PLUS
+    &none       &none       &kp PG_UP   &none       &kp PG_DN   &none           &kp DM_SLASH &kp N1     &kp N2      &kp N3      &kp DM_MINUS   &none      
                                         &trans      &trans      &trans          &kp COMMA    &kp DOT    &kp N0      
                         >;
                 };
@@ -150,8 +150,8 @@ label= "RAISE_M"                             ;
 
                 &kp DM_DEG &kp DM_AMPS  &kp DM_DQT   &kp DM_LBKT &kp DM_BSLH    &none       &kp DM_RBKT &kp uuml     &kp DM_SQT   &kp DM_SECT
                 &kp auml   &kp DM_AT    &kp DM_SZ    &kp DM_LPAR &kp DM_EXCL    &kp DM_HASH &kp DM_RPAR &kp DM_EURO  &kp DM_DLLR  &kp ouml             
-    &none       &none      &kp DM_PIPE  &kp DM_TILDE &kp DM_LBRC &none          &none       &kp DM_RBRC &kp DM_ACUTE &kp DM_GRAVE &none       &trans         
-                                        &trans       &trans      &mo ADJ        &none       &trans      &trans      
+    &none       &none      &kp DM_PIPE  &kp DM_TILDE &kp DM_LBRC &none          &none       &kp DM_RBRC &kp DM_ACUTE &kp DM_GRAVE &none       &none         
+                                        &none        &none       &mo ADJ        &none       &none       &none      
                         >;
                 };
 
@@ -166,7 +166,7 @@ label= "BASE_W"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A     ┃     R     ┃     S     ┃     T     ┃     G     ┃   ┃     M     ┃     N     ┃     E     ┃     I     ┃     O     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃   ENTER   ┃
+// ┃           ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃   LGUI    ┃   LSHFT   ┃   LOWER_M ┃   ┃   RAISE_M ┃    SPC    ┃   LALT    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -175,8 +175,8 @@ label= "BASE_W"                              ;
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp DW_Y    &SMW_SEMI
                 &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp G           &kp M       &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI O
-    &none       &kp DW_Z    &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &SMW_COMMA  &SMW_DOT    &SMW_FSLH   &kp RET
-                                        &kp LCTRL   &kp SPACE   &mo LOWER_W     &mo RAISE_W &kp SPACE   &kp LALT
+    &none       &kp DW_Z    &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &SMW_COMMA  &SMW_DOT    &SMW_FSLH   &none
+                                        &kp LCTRL   &kp SPACE   &mo LOWER_W     &mo RAISE_W &kp RET     &kp LALT
                         >;
                 };
 
@@ -199,8 +199,8 @@ label= "LOWER_W"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &kp HOME    &kp UP      &kp END     &none           &kp DW_PRCNT &kp N7     &kp N8      &kp N9      &kp DW_EQUAL
-                &kp LC(LEFT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp LC(RIGHT)   &kp DW_STAR  &kp N4     &kp N5      &kp N6      &kp DW_PLUS
-    &none       &none       &kp PG_UP   &none       &kp PG_DN   &none           &kp DW_SLASH &kp N1     &kp N2      &kp N3      &kp DW_MINUS   &trans      
+                &kp DW_DL   &kp LEFT    &kp DOWN    &kp RIGHT   &kp DW_DR       &kp DW_STAR  &kp N4     &kp N5      &kp N6      &kp DW_PLUS
+    &none       &none       &kp PG_UP   &none       &kp PG_DN   &none           &kp DW_SLASH &kp N1     &kp N2      &kp N3      &kp DW_MINUS   &none      
                                         &trans      &trans      &trans          &kp COMMA    &kp DOT    &kp N0      
                         >;
                 };
@@ -225,8 +225,8 @@ label= "RAISE_W"                             ;
 
                 &kp DW_DEG &kp DW_AMPS &kp DW_DQT   &kp DW_LBKT &kp DW_BSLH     &none       &kp DW_RBKT &kp uuml     &kp DW_SQT   &kp DW_SECT
                 &kp auml   &kp DW_AT   &kp DW_SZ    &kp DW_LPAR &kp DW_EXCL     &kp DW_HASH &kp DW_RPAR &kp DW_EURO  &kp DW_DLLR  &kp ouml             
-    &none       &none      &kp DW_PIPE &kp DW_TILDE &kp DW_LBRC &none           &none       &kp DW_RBRC &kp DW_ACUTE &kp DW_GRAVE &none       &trans         
-                                       &trans       &trans      &mo ADJ         &none       &trans      &trans      
+    &none       &none      &kp DW_PIPE &kp DW_TILDE &kp DW_LBRC &none           &none       &kp DW_RBRC &kp DW_ACUTE &kp DW_GRAVE &none       &none         
+                                       &none        &none       &mo ADJ         &none       &none       &none      
                         >;
                 };
 
@@ -249,10 +249,10 @@ label= "ADJ"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &sys_reset  &bt BT_CLR  &out OUT_TOG &trans     &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
-                &bootloader &bt BT_NXT  &trans      &none       &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
-    &none       &trans      &bt BT_PRV  &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+                &sys_reset  &bt BT_CLR  &out OUT_TOG &none      &none          &none      &kp F7      &kp F8      &kp F9      &kp F12
+                &bootloader &bt BT_NXT  &none        &none      &none          &none      &kp F4      &kp F5      &kp F6      &kp F11  
+    &none       &none       &bt BT_PRV  &none        &none      &none          &none      &kp F1      &kp F2      &kp F3      &kp F10     &none         
+                                        &none        &none      &none          &none      &none       &none      
                         >;
                 };
         };
