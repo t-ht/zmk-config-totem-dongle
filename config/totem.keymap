@@ -61,7 +61,7 @@
             combo_tab {
                 timeout-ms = <50>;
                 key-positions = <0 10>;
-                bindings = <&kp LA(BSPC)>;
+                bindings = <&kp TAB>;
             };
             combo_toggle_os {
                 timeout-ms = <50>;
