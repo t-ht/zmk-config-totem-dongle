@@ -354,3 +354,9 @@ UC_MODMORPH(SMM_COMMA, DM_COMMA, DM_LT)
 
 /* . -> > */
 UC_MODMORPH(SMM_DOT, DM_DOT, DM_GT)
+
+/* virtual Desktop to left*/
+#define DM_DL (LC(LEFT))
+
+/* virtual Desktop to left*/
+#define DM_DR (LC(RIGHT))

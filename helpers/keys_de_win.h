@@ -351,3 +351,9 @@ UC_MODMORPH(SMW_COMMA, DW_COMMA, DW_LT)
 
 /* . -> > */
 UC_MODMORPH(SMW_DOT, DW_DOT, DW_GT)
+
+/* virtual Desktop to left*/
+#define DW_DL (LC(LG(LEFT)))
+
+/* virtual Desktop to left*/
+#define DW_DR (LC(LG(RIGHT)))
